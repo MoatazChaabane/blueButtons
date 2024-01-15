@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "blue-buttons-client-side-solution",
+    "id": "a55df7e7-068c-4a0c-9642-8f8f844085e7",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.18.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "blue-buttons description"
+      },
+      "longDescription": {
+        "default": "blue-buttons description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "blue-buttons Feature",
+        "description": "The feature that activates elements of the blue-buttons solution.",
+        "id": "4bf46939-b737-4448-8a05-301165adc599",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/blue-buttons.sppkg"
+  }
+}

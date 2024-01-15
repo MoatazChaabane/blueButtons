@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "18.18.0",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.12.0"
+    },
+    "version": "1.18.2",
+    "libraryName": "blue-buttons",
+    "libraryId": "a55df7e7-068c-4a0c-9642-8f8f844085e7",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "blue-buttons",
+    "solutionShortDescription": "blue-buttons description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
