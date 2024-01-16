@@ -31,4 +31,42 @@
       color: var(--linkHovered); // note: CSS Custom Properties support is limited to modern browsers only
     }
   }
+  /* style.css */
+/* style.css */
+.requestBtn, .appBtn, .templateBtn, .projectBtn, .employeeBtn, .policiesBtn {
+  color: #fff !important;
+  border: none !important;
+  height: 120% !important;
 }
+
+.requestBtn {
+  background-color: #59b6f3 !important;
+}
+
+.appBtn {
+  background-color: #4091e2 !important;
+}
+
+.templateBtn {
+  background-color: #4574d0 !important;
+}
+
+.projectBtn {
+  background-color: #368cf1 !important;
+}
+
+.employeeBtn {
+  background-color: #4091e2 !important;
+}
+
+.policiesBtn {
+  background-color: #59b6f3 !important;
+}
+  .icon{
+    height: 12px;
+    width: 12px;
+  }
+}
+
+
+  

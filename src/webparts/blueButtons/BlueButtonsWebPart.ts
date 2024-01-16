@@ -30,7 +30,7 @@ export default class BlueButtonsWebPart extends BaseClientSideWebPart<IBlueButto
         environmentMessage: this._environmentMessage,
         hasTeamsContext: !!this.context.sdks.microsoftTeams,
         userDisplayName: this.context.pageContext.user.displayName
-      }
+      } as unknown as IBlueButtonsProps
     );
 
     ReactDom.render(element, this.domElement);
