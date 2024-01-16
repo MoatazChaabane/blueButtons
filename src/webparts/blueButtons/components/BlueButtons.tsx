@@ -10,30 +10,30 @@ export default class BlueButtons extends React.Component<IBlueButtonsProps, {}> 
         <div className="row">
           <div className="col">
           <button type="button" className="btn w-100 requestBtn" style={{ backgroundColor: "#59b6f3", color: "#fff", border: "none", height: "120%" }}>
-  <img className={styles.icon} height="12px" width="12px" src={require('../assets/icons/pencil.png')} alt="Pencil Icon" style={{ marginRight: '4px' }} />
+  <img className={styles.icon} height="16px" width="16px" src={require('../assets/icons/pencil.png')} alt="Pencil Icon" style={{ marginRight: '4px' }} />
   Request Forms
 </button>
           </div>
           <div className="col">
-            <button type="button" className="btn w-100 appBtn" style={{ backgroundColor: "#4091e2", color: "#fff", border: "none", height: "120%" }}>   <img className={styles.icon} height="12px" width="12px" src={require('../assets/icons/sparkling.png')} alt="Pencil Icon" style={{ marginRight: '4px' }} />
+            <button type="button" className="btn w-100 appBtn" style={{ backgroundColor: "#4091e2", color: "#fff", border: "none", height: "120%" }}>   <img className={styles.icon} height="16px" width="16px" src={require('../assets/icons/sparkling.png')} alt="Pencil Icon" style={{ marginRight: '4px' }} />
  Applications</button>
           </div>
           <div className="col">
-            <button type="button" className="btn  w-100 templateBtn" style={{ backgroundColor: "#4574d0", color: "#fff", border: "none", height: "120%" }}>  <img className={styles.icon} height="12px" width="12px" src={require('../assets/icons/pencil.png')} alt="Pencil Icon" style={{ marginRight: '4px' }} />
+            <button type="button" className="btn  w-100 templateBtn" style={{ backgroundColor: "#4574d0", color: "#fff", border: "none", height: "120%" }}>  <img className={styles.icon} height="16px" width="16px" src={require('../assets/icons/pencil.png')} alt="Pencil Icon" style={{ marginRight: '4px' }} />
  Templates</button>
           </div>
         </div>
         <div className="row mt-3">
           <div className="col">
-            <button type="button" className="btn  w-100 projectBtn" style={{ backgroundColor: "#368cf1", color: "#fff", border: "none", height: "120%" }}>  <img className={styles.icon} height="12px" width="12px" src={require('../assets/icons/lamp.png')} alt="Pencil Icon" style={{ marginRight: '4px' }} />
+            <button type="button" className="btn  w-100 projectBtn" style={{ backgroundColor: "#368cf1", color: "#fff", border: "none", height: "120%" }}>  <img className={styles.icon} height="16px" width="16px" src={require('../assets/icons/lamp.png')} alt="Pencil Icon" style={{ marginRight: '4px' }} />
  Projects</button>
           </div>
           <div className="col">
-            <button type="button" className="btn  w-100 employeeBtn" style={{ backgroundColor: "#4091e2", color: "#fff", border: "none", height: "120%" }}>  <img className={styles.icon} height="12px" width="12px" src={require('../assets/icons/protection.png')} alt="Pencil Icon" style={{ marginRight: '4px' }} />
+            <button type="button" className="btn  w-100 employeeBtn" style={{ backgroundColor: "#4091e2", color: "#fff", border: "none", height: "120%" }}>  <img className={styles.icon} height="16px" width="16px" src={require('../assets/icons/protection.png')} alt="Pencil Icon" style={{ marginRight: '4px' }} />
  Employee Handbook</button>
           </div>
           <div className="col">
-            <button type="button" className="btn  w-100 policiesBtn" style={{ backgroundColor: "#59b6f3", color: "#fff", border: "none", height: "120%" }}>  <img className={styles.icon} height="12px" width="12px" src={require('../assets/icons/protection.png')} alt="Pencil Icon" style={{ marginRight: '4px' }} />
+            <button type="button" className="btn  w-100 policiesBtn" style={{ backgroundColor: "#59b6f3", color: "#fff", border: "none", height: "120%" }}>  <img className={styles.icon} height="16px" width="16px" src={require('../assets/icons/protection.png')} alt="Pencil Icon" style={{ marginRight: '4px' }} />
  Policies & Procedures</button>
           </div>
         </div>
