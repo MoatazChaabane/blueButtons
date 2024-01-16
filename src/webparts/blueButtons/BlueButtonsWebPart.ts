@@ -13,6 +13,12 @@ import BlueButtons from './components/BlueButtons';
 import { IBlueButtonsProps } from './components/IBlueButtonsProps';
 
 export interface IBlueButtonsWebPartProps {
+  policiesLink: any;
+  employeeHandbookLink: any;
+  projectsLink: any;
+  templatesLink: any;
+  applicationsLink: any;
+  requestFormsLink: any;
   description: string;
 }
 
@@ -29,7 +35,13 @@ export default class BlueButtonsWebPart extends BaseClientSideWebPart<IBlueButto
         isDarkTheme: this._isDarkTheme,
         environmentMessage: this._environmentMessage,
         hasTeamsContext: !!this.context.sdks.microsoftTeams,
-        userDisplayName: this.context.pageContext.user.displayName
+        userDisplayName: this.context.pageContext.user.displayName,
+        requestFormsLink: this.properties.requestFormsLink,
+      applicationsLink: this.properties.applicationsLink,
+      templatesLink: this.properties.templatesLink,
+      projectsLink: this.properties.projectsLink,
+      employeeHandbookLink: this.properties.employeeHandbookLink,
+      policiesLink: this.properties.policiesLink,
       } as unknown as IBlueButtonsProps
     );
 
@@ -110,7 +122,25 @@ export default class BlueButtonsWebPart extends BaseClientSideWebPart<IBlueButto
               groupFields: [
                 PropertyPaneTextField('description', {
                   label: strings.DescriptionFieldLabel
-                })
+                }),
+                PropertyPaneTextField('requestFormsLink', {
+                  label: 'Request Forms Link'
+                }),
+                PropertyPaneTextField('applicationsLink', {
+                  label: 'Applications Link'
+                }),
+                PropertyPaneTextField('templatesLink', {
+                  label: 'Templates Link'
+                }),
+                PropertyPaneTextField('projectsLink', {
+                  label: 'Projects Link'
+                }),
+                PropertyPaneTextField('employeeHandbookLink', {
+                  label: 'Employee Handbook Link'
+                }),
+                PropertyPaneTextField('policiesLink', {
+                  label: 'Policies & Procedures Link'
+                }),
               ]
             }
           ]
@@ -118,4 +148,5 @@ export default class BlueButtonsWebPart extends BaseClientSideWebPart<IBlueButto
       ]
     };
   }
+  
 }
