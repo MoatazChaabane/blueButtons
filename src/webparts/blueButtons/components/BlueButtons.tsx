@@ -9,7 +9,7 @@ export default class BlueButtons extends React.Component<IBlueButtonsProps, {}> 
       <div className="container mt-3">
         <div className="row">
           <div className="col-md-4 mb-3">
-            <a href={this.props.requestFormsLink} className={`btn w-100 ${styles.requestBtn}`} style={{ backgroundColor: "#59b6f3", color: "#fff", border: "none", height: "120%" }}>
+            <a href={this.props.requestFormsLink} className={`btn w-100 ${styles.requestBtn}`} style={{ backgroundColor: "#59b6f3", color: "#fff", border: "none", height: "120%"}}>
               <img
                 className={styles.icon}
                 height="16px" width="16px"
