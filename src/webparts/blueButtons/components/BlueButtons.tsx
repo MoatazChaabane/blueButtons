@@ -17,7 +17,7 @@ export default class BlueButtons extends React.Component<IBlueButtonsProps, {}> 
                 alt="Pencil Icon"
                 style={{ marginRight: '4px' }}
               />
-              Request Forms
+              {this.props.title1}
             </a>
           </div>
           <div className="col-md-4 mb-3">
@@ -29,7 +29,8 @@ export default class BlueButtons extends React.Component<IBlueButtonsProps, {}> 
                 alt="Sparkling Icon"
                 style={{ marginRight: '4px' }}
               />
-              Applications
+                            {this.props.title2}
+
             </a>
           </div>
           <div className="col-md-4 mb-3">
@@ -41,7 +42,8 @@ export default class BlueButtons extends React.Component<IBlueButtonsProps, {}> 
                 alt="Pencil Icon"
                 style={{ marginRight: '4px' }}
               />
-              Templates
+                            {this.props.title3}
+
             </a>
           </div>
         </div>
@@ -55,7 +57,8 @@ export default class BlueButtons extends React.Component<IBlueButtonsProps, {}> 
                 alt="Lamp Icon"
                 style={{ marginRight: '4px' }}
               />
-              Projects
+                            {this.props.title4}
+
             </a>
           </div>
           <div className="col-md-4 mb-3">
@@ -67,7 +70,8 @@ export default class BlueButtons extends React.Component<IBlueButtonsProps, {}> 
                 alt="Protection Icon"
                 style={{ marginRight: '4px' }}
               />
-              Employee Handbook
+                            {this.props.title5}
+
             </a>
           </div>
           <div className="col-md-4 mb-3">
@@ -79,7 +83,8 @@ export default class BlueButtons extends React.Component<IBlueButtonsProps, {}> 
                 alt="Protection Icon"
                 style={{ marginRight: '4px' }}
               />
-              Policies & Procedures
+                            {this.props.title6}
+
             </a>
           </div>
         </div>

@@ -20,6 +20,12 @@ export interface IBlueButtonsWebPartProps {
   applicationsLink: any;
   requestFormsLink: any;
   description: string;
+  title1:string;
+  title2:string;
+  title3:string;
+  title4:string;
+  title5:string;
+  title6:string;
 }
 
 export default class BlueButtonsWebPart extends BaseClientSideWebPart<IBlueButtonsWebPartProps> {
@@ -42,6 +48,12 @@ export default class BlueButtonsWebPart extends BaseClientSideWebPart<IBlueButto
       projectsLink: this.properties.projectsLink,
       employeeHandbookLink: this.properties.employeeHandbookLink,
       policiesLink: this.properties.policiesLink,
+      title1: this.properties.title1,
+      title2: this.properties.title2,
+      title3: this.properties.title3,
+      title4: this.properties.title4,
+      title5: this.properties.title5,
+      title6: this.properties.title6,
       } as unknown as IBlueButtonsProps
     );
 
@@ -123,24 +135,44 @@ export default class BlueButtonsWebPart extends BaseClientSideWebPart<IBlueButto
                 PropertyPaneTextField('description', {
                   label: strings.DescriptionFieldLabel
                 }),
+               
+                PropertyPaneTextField('title1', {
+                  label: 'title of button 1'
+                }),
                 PropertyPaneTextField('requestFormsLink', {
-                  label: 'Request Forms Link'
+                  label: 'Link of button 1'
+                }),
+                PropertyPaneTextField('title2', {
+                  label: 'title of button 2'
                 }),
                 PropertyPaneTextField('applicationsLink', {
-                  label: 'Applications Link'
+                  label: 'Link of button 2'
+                }),
+                PropertyPaneTextField('title3', {
+                  label: 'title of button 3'
                 }),
                 PropertyPaneTextField('templatesLink', {
-                  label: 'Templates Link'
+                  label: 'Link of button 3'
+                }),
+                PropertyPaneTextField('title4', {
+                  label: 'title of button 4'
                 }),
                 PropertyPaneTextField('projectsLink', {
-                  label: 'Projects Link'
+                  label: 'Link of button 4'
+                }),
+                PropertyPaneTextField('title5', {
+                  label: 'title of button 5'
                 }),
                 PropertyPaneTextField('employeeHandbookLink', {
-                  label: 'Employee Handbook Link'
+                  label: 'Link of button 5'
+                }),
+                PropertyPaneTextField('title6', {
+                  label: 'title of button 6'
                 }),
                 PropertyPaneTextField('policiesLink', {
-                  label: 'Policies & Procedures Link'
+                  label: 'Link of button6'
                 }),
+                
               ]
             }
           ]
