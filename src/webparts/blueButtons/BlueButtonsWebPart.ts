@@ -5,6 +5,9 @@ import {
   type IPropertyPaneConfiguration,
   PropertyPaneTextField
 } from '@microsoft/sp-property-pane';
+import { PropertyFieldColorPicker, PropertyFieldColorPickerStyle } from '@pnp/spfx-property-controls/lib/PropertyFieldColorPicker';
+
+
 import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
 import { IReadonlyTheme } from '@microsoft/sp-component-base';
 
@@ -26,6 +29,12 @@ export interface IBlueButtonsWebPartProps {
   title4:string;
   title5:string;
   title6:string;
+  color1:string;
+  color2:string;
+  color3:string;
+  color4:string;
+  color5:string;
+  color6:string;
 }
 
 export default class BlueButtonsWebPart extends BaseClientSideWebPart<IBlueButtonsWebPartProps> {
@@ -54,6 +63,12 @@ export default class BlueButtonsWebPart extends BaseClientSideWebPart<IBlueButto
       title4: this.properties.title4,
       title5: this.properties.title5,
       title6: this.properties.title6,
+      color1: this.properties.color1,
+      color2: this.properties.color2,
+      color3: this.properties.color3,
+      color4:this.properties.color4,
+      color5: this.properties.color5,
+      color6: this.properties.color6,
       } as unknown as IBlueButtonsProps
     );
 
@@ -142,11 +157,37 @@ export default class BlueButtonsWebPart extends BaseClientSideWebPart<IBlueButto
                 PropertyPaneTextField('requestFormsLink', {
                   label: 'Link of button 1'
                 }),
+                PropertyFieldColorPicker('color1', {
+                  label: 'Color of button 1',
+                  selectedColor: this.properties.color1,
+                  onPropertyChange: this.onPropertyPaneFieldChanged,
+                  properties: this.properties,
+                  disabled: false,
+                  debounce: 1000,
+                  isHidden: false,
+                  alphaSliderHidden: false,
+                  style: PropertyFieldColorPickerStyle.Full,
+                  iconName: 'Precipitation',
+                  key: 'colorFieldId'
+                }),
                 PropertyPaneTextField('title2', {
                   label: 'title of button 2'
                 }),
                 PropertyPaneTextField('applicationsLink', {
                   label: 'Link of button 2'
+                }),
+                PropertyFieldColorPicker('color2', {
+                  label: 'Color of button 2',
+                  selectedColor: this.properties.color2,
+                  onPropertyChange: this.onPropertyPaneFieldChanged,
+                  properties: this.properties,
+                  disabled: false,
+                  debounce: 1000,
+                  isHidden: false,
+                  alphaSliderHidden: false,
+                  style: PropertyFieldColorPickerStyle.Full,
+                  iconName: 'Precipitation',
+                  key: 'colorFieldId'
                 }),
                 PropertyPaneTextField('title3', {
                   label: 'title of button 3'
@@ -154,11 +195,37 @@ export default class BlueButtonsWebPart extends BaseClientSideWebPart<IBlueButto
                 PropertyPaneTextField('templatesLink', {
                   label: 'Link of button 3'
                 }),
+                PropertyFieldColorPicker('color3', {
+                  label: 'Color of button 3',
+                  selectedColor: this.properties.color3,
+                  onPropertyChange: this.onPropertyPaneFieldChanged,
+                  properties: this.properties,
+                  disabled: false,
+                  debounce: 1000,
+                  isHidden: false,
+                  alphaSliderHidden: false,
+                  style: PropertyFieldColorPickerStyle.Full,
+                  iconName: 'Precipitation',
+                  key: 'colorFieldId'
+                }),
                 PropertyPaneTextField('title4', {
                   label: 'title of button 4'
                 }),
                 PropertyPaneTextField('projectsLink', {
                   label: 'Link of button 4'
+                }),
+                PropertyFieldColorPicker('color4', {
+                  label: 'Color of button 4',
+                  selectedColor: this.properties.color4,
+                  onPropertyChange: this.onPropertyPaneFieldChanged,
+                  properties: this.properties,
+                  disabled: false,
+                  debounce: 1000,
+                  isHidden: false,
+                  alphaSliderHidden: false,
+                  style: PropertyFieldColorPickerStyle.Full,
+                  iconName: 'Precipitation',
+                  key: 'colorFieldId'
                 }),
                 PropertyPaneTextField('title5', {
                   label: 'title of button 5'
@@ -166,12 +233,39 @@ export default class BlueButtonsWebPart extends BaseClientSideWebPart<IBlueButto
                 PropertyPaneTextField('employeeHandbookLink', {
                   label: 'Link of button 5'
                 }),
+                PropertyFieldColorPicker('color5', {
+                  label: 'Color of button 5',
+                  selectedColor: this.properties.color5,
+                  onPropertyChange: this.onPropertyPaneFieldChanged,
+                  properties: this.properties,
+                  disabled: false,
+                  debounce: 1000,
+                  isHidden: false,
+                  alphaSliderHidden: false,
+                  style: PropertyFieldColorPickerStyle.Full,
+                  iconName: 'Precipitation',
+                  key: 'colorFieldId'
+                }),
                 PropertyPaneTextField('title6', {
                   label: 'title of button 6'
                 }),
                 PropertyPaneTextField('policiesLink', {
                   label: 'Link of button6'
                 }),
+                PropertyFieldColorPicker('color6', {
+                  label: 'Color of button 6',
+                  selectedColor: this.properties.color6,
+                  onPropertyChange: this.onPropertyPaneFieldChanged,
+                  properties: this.properties,
+                  disabled: false,
+                  debounce: 1000,
+                  isHidden: false,
+                  alphaSliderHidden: false,
+                  style: PropertyFieldColorPickerStyle.Full,
+                  iconName: 'Precipitation',
+                  key: 'colorFieldId'
+                }),
+                
                 
               ]
             }

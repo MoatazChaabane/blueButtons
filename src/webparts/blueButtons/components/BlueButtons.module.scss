@@ -49,7 +49,7 @@ $policiesColor: #59b6f3;
 }
 
 .requestBtn {
-  background-color: $requestColor !important;
+  // background-color: $requestColor !important;
   &:hover {
     background-color: darken($requestColor, 10%) !important; // Adjust the percentage as needed
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); // Adjust the shadow as needed
@@ -58,7 +58,7 @@ $policiesColor: #59b6f3;
 }
 
 .appBtn {
-  background-color: $appColor !important;
+  // background-color: $appColor !important;
   &:hover {
     background-color: darken($appColor, 10%) !important; // Adjust the percentage as needed
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); // Adjust the shadow as needed
@@ -67,7 +67,7 @@ $policiesColor: #59b6f3;
 }
 
 .templateBtn {
-  background-color: $templateColor !important;
+  // background-color: $templateColor !important;
   &:hover {
     background-color: darken($templateColor, 10%) !important; // Adjust the percentage as needed
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); // Adjust the shadow as needed
@@ -76,7 +76,7 @@ $policiesColor: #59b6f3;
 }
 
 .projectBtn {
-  background-color: $projectColor !important;
+  // background-color: $projectColor !important;
   &:hover {
     background-color: darken($projectColor, 10%) !important; // Adjust the percentage as needed
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); // Adjust the shadow as needed
@@ -85,7 +85,7 @@ $policiesColor: #59b6f3;
 }
 
 .employeeBtn {
-  background-color: $employeeColor !important;
+  // background-color: $employeeColor !important;
   &:hover {
     background-color: darken($employeeColor, 10%) !important; // Adjust the percentage as needed
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); // Adjust the shadow as needed
@@ -94,7 +94,7 @@ $policiesColor: #59b6f3;
 }
 
 .policiesBtn {
-  background-color: $policiesColor !important;
+  // background-color: $policiesColor !important;
   &:hover {
     background-color: darken($policiesColor, 10%) !important; // Adjust the percentage as needed
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); // Adjust the shadow as needed
