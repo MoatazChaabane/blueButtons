@@ -8,7 +8,6 @@ export default class BlueButtons extends React.Component<IBlueButtonsProps, {}> 
     return (
       <div className="container mt-3">
         <div className="row">
-        {console.log('Title1:', this.props.title1)}
 {this.props.title1 && this.props.title1.trim() !== '' && this.props.title1.trim() !== ' ' && (
   <div className="col-md-4 mb-3">
     <a
